@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+header {
+    background-color: white;
+    position: relative;
+    width: 100%;
+}
+.future {
+    border-bottom: 1px solid rgb(66, 65, 65);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 80px;
+}
+.next {
+    width: auto;
+    height: 30px;
+    background-color: white;
+}
+
+.concepts {
+    background-image: url("./images/living-room-chair.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(212, 206, 206);
+    /* height: auto; */
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+}
+.view {
+    padding: 150px 80px;
+    width: 650px;
+}
+.view h1 {
+    font-size: 4.5em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 50px;
+}
+.view p {
+    font-size: 1.5em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.3em;
+    margin-bottom: 50px;
+}
+.boxes {
+    display: flex;
+}
+.black {
+    background-color: black;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    margin-right: 60px;
+    padding: 10px;
+}
+.black p {
+    color: white;
+}
+.black p, .outline p {
+    font-size: 1.2em;
+}
+.outline {
+    height: 50px;
+    width: 150px;
+    border: 1px solid rgb(66, 65, 65);
+    text-align: center;
+    padding: 10px;
+}
+
+/* section layers starts here */
+.layers {
+    width: auto;
+    height: 750px; 
+    background-color: white;
+    /* background: yellow; */
+    /* position: relative; */
+}
+.white {
+    padding: 0 80px 80px 80px;
+    position: relative;
+}
+.brown-1 {
+    height: 550px;
+    width: 550px;
+    background-color: rgb(156, 123, 80);
+    position: relative;
+    top: -40px;
+}
+.hammock {
+    height: 650px;
+    width: 550px;
+    position: relative;
+    top: -520px;
+    left: 50px;
+}
+.cozy {
+    width: 400px;
+    height: 250px;
+    background-color: white;
+    position: relative;
+    right: -400px;
+    bottom: 750px;
+    /* top: 27.5em; */
+    padding: 60px 30px;
+}
+.cozy h2 {
+    font-size: 1.8em;
+    margin-bottom: 18px;
+    margin-left: 60px;
+}
+.cozy p {
+    font-size: 18px;
+}
+.brown-2 {
+    background-color: rgb(156, 123, 80);
+    width: 380px;
+    height: 320px;
+    position: relative;
+    float: right;
+    top: -1420px;
+    color: white;
+    padding: 100px 30px;
+}
+.brown-2 h1 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+/* section chairs starts here */
+
+.new {
+    background-color: rgb(212, 206, 206);
+    width: auto;
+    height: auto;
+    position: relative;
+}
+.grey {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 80px;
+}
+.texts {
+    width: 200px;
+    padding: 30px 5px;
+}
+.line {
+    background-color: rgb(156, 123, 80);
+    width: 80px;
+    height: 5px;
+    margin-bottom: 30px;
+}
+.texts h2 {
+    margin-bottom: 30px;
+    line-height: 1.2em;
+}
+.texts p {
+    line-height: 1.2em;
+    font-style: italic;
+    font-size: 18px;
+}
+.img-1, .img-2, .img-3 {
+    background-color: white;
+    height: 280px;
+    width: 250px;
+}
+.comfy {
+    height: 250px;
+    width: 220px;
+}
+
+/* different display section begins here */
+.nature {
+    background-color: white;
+    width: auto;
+    height: auto;
+    position: relative;
+}
+.display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+}
+.title {
+    width: 60%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.title h1 {
+    color:rgb(156, 123, 80);
+    font-size: 3.0em;
+    margin-bottom: 20px;
+}
+.title p {
+    font-size: 18px;
+}
+.grid-1 {
+    display: grid;
+    grid-template-columns: 380px 380px 380px;
+    grid-template-rows: 400px 400px;
+    margin-bottom: 120px;
+}
+.pic-1 {
+    background-image: url("./images/7.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pic-2 {
+    background-image: url("./images/7.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pic-3 {
+    background-image: url("./images/7.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pic-4 {
+    background-image: url("./images/7.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pic-5 {
+    background-image: url("./images/7.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pic-6 {
+    background-image: url("./images/7.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.middle {
+    width: 400px;
+    /* margin-left: -150px; */
+    margin-right: 150px;
+}
+.middle h1 {
+    font-size: 2.0em;
+    margin-bottom: 30px;
+}
+.middle p {
+    font-size: 18px;
+}
+.above {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: brown; */
+}
+.brown-3 {
+    height: 500px;
+    width: 400px;
+    background-color: rgb(156, 123, 80);
+    margin-left: 200px;
+}
+.lady {
+    margin-top: -450px;
+    margin-left: 70px;
+}
+.chair {
+    width: 250px;
+    height: 270px;
+    margin-top: -220px;
+    margin-left: -120px;
+}
+.grid-2 {
+    width: 1343px;
+    height: auto;
+    background-image: url("./images/tomraffield.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    margin-bottom: 80px;
+}
+.grid-2a {
+    float: right;
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 400px 400px;
+}
+.span-1 {
+    background-color: rgb(156, 123, 80);
+    background-image: url("./images/rocky.png");
+    background-position: center;
+    background-size: 350px;
+    background-repeat: no-repeat;
+}
+.span-2 {
+    background-color: rgb(231, 228, 228);
+    padding: 120px 50px;
+}
+.span-2 h2 {
+    margin-bottom: 30px;
+}
+.span-3 {
+    background-color: rgb(231, 228, 228);
+    padding: 120px 30px;
+}
+.span-3 h2 {
+    margin-bottom: 30px;
+}
+.span-4 {
+    background-image: url("./images/cookie.jpeg");
+    background-repeat: no-repeat;
+    background-size: 350px 400px;
+    background-position: center;
+}
+.icons {
+    height: 500px;
+    width: 100%;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 100px;
+}
+.icon-1 {
+    background-image: url("./images/woo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-2 {
+    background-image: url("./images/The\ O.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-3 {
+    background-image: url("./images/NOOM.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-4 {
+    background-image: url("./images/Mazepa_base_logo01201x201.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-5 {
+    background-image: url("./images/FILD.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-6 {
+    background-image: url("./images/ODESD2_logo2.001173x173.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
