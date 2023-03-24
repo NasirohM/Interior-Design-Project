@@ -7,7 +7,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 .parent {
-    width: 100%;
+    min-width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -17,21 +17,20 @@ body {
 header {
     background-color: white;
     position: relative;
-    width: 100%;
 }
 .future {
-    border-bottom: 1px solid rgb(66, 65, 65);
+    border-bottom: 1px solid rgb(190, 189, 189);
     display: flex;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
     padding: 30px 80px;
     font-family: 'Open Sans', sans-serif;
 }
 .future h2 {
-    font-weight: 400;
+    font-weight: 500;
 }
 .next {
-    width: auto;
     height: 30px;
     background-color: white;
 }
@@ -528,8 +527,17 @@ hr {
     .future {
         padding: 30px 50px;
     }
+    .future h2 {
+        font-size: 20px;
+    }
+    .next {
+        height: 20px;
+    }
 
     /* CONCEPT section */
+    .concepts {
+        background-size: cover; 
+    }
     .view {
         padding: 60px 50px;
         width: 400px;
