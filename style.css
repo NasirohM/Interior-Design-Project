@@ -7,7 +7,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 .parent {
-    min-width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -41,9 +41,8 @@ header {
     background-size: contain;
     background-repeat: no-repeat;
     background-color: rgb(236, 234, 234);
-    width: auto;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 .view {
     padding: 150px 80px;
@@ -96,7 +95,6 @@ a {
 
 /* SECTION LAYERS starts here */
 .layers {
-    width: auto;
     height: 750px; 
     background-color: white;
 }
@@ -158,7 +156,6 @@ a {
 /* SECTION NEW starts here */
 .new {
     background-color: rgb(240, 240, 240);
-    width: auto;
     position: relative;
 }
 .grey {
@@ -224,13 +221,13 @@ a {
 /* NATURE section begins here */
 .nature {
     background-color: white;
-    width: auto;
     position: relative;
 }
 .display {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     /* padding: 80px; */
 }
 .title {
@@ -535,7 +532,7 @@ hr {
 @media (max-width:425px) {
     /* HEADER SECTION */
     .future {
-        padding: 30px 50px;
+        padding: 30px 40px;
     }
     .future h2 {
         font-size: 20px;
@@ -549,17 +546,17 @@ hr {
         background-size: cover; 
     }
     .view {
-        padding: 60px 50px;
-        width: 400px;
+        padding: 55px 40px;
+        width: 350px;
     }
     .view h1 {
-        font-size: 2.3em;
-        margin-bottom: 25px;
-        line-height: 2.0em;
+        font-size: 2.0em;
+        margin-bottom: 20px;
+        line-height: 1.0em;
     }
     .view p {
         margin-bottom: 40px;
-        font-size: 0.5em;
+        font-size: 1.0em;
     }
     .boxes {
         flex-direction: column;
@@ -581,25 +578,28 @@ hr {
     .layers {
         height: 1060px;
     }
+    .white {
+        padding: 0 60px 56px 60px;
+    }
     .brown-1 {
-        height: 500px;
-        width: 320px;
+        height: 400px;
+        width: 300px;
         left: -30px;
         top: -40px;
     }
     .hammock {
-        width: 320px;
-        height: 500px;
+        width: 300px;
+        height: 400px;
         left: 10px;
-        top: -470px;
+        top: -367px;
     }
     .cozy {
         right: 0;
         left: -30px;
-        width: 350px;
+        width: 310px;
         height: 200px;
-        padding: 40px 50px;
-        bottom: 474px;
+        padding: 30px 37px;
+        bottom: 320px;
     }
     .cozy h2 {
         margin-left: 0;
@@ -611,11 +611,11 @@ hr {
         font-weight: lighter;
     }
     .brown-2 {
-        width: 350px;
-        height: 280px;
-        top: -474px;
+        width: 320px;
+        height: 255px;
+        top: -280px;
         left: 32px;
-        padding: 80px 30px;
+        padding:60px 30px;
     }
 
     /* NEW section starts here */
@@ -627,7 +627,7 @@ hr {
     }
     .texts {
         padding: 0;
-        width: 320px;
+        width: 310px;
         margin-bottom: 100px;
         margin-left: 80px;
     }
@@ -642,9 +642,11 @@ hr {
     }
     .img-1 {
         margin-bottom: 30px;
+        margin-right: 0;
     }
     .img-2 {
         margin-bottom: 30px;
+        margin-right: 0;
     }
 
     /* NATURE section starts here */
@@ -664,9 +666,9 @@ hr {
         margin-bottom: 150px;
     }
     .flex {
-        flex-direction: column;
+        flex-wrap: wrap;
         justify-content: center;
-        margin-bottom: 120px;
+        margin-bottom: 100px;
     }
     .middle {
         width: 350px;
@@ -680,32 +682,31 @@ hr {
         font-family: 'Open Sans', sans-serif;
     }
     .above {
-        width: 500px;
+        width: 100%;
     }
     .brown-3 {
-        height: 450px;
-        width: 300px;
-        margin-left: 130px;
+        height: 380px;
+        width: 280px;
+        margin-left: 60px;
     }
     .lady {
-        height: 350px;
-        width: 300px;
-        margin-top: -400px;
+        height: 280px;
+        width: 260px;
+        margin-top: -330px;
         margin-bottom: 100px;
-        margin-left: 80px;
+        margin-left: 30px;
     }
     .chair {
-        width: 180px;
-        height: 180px;
-        margin-top: -180px;
-        margin-left: 55px;
+        width: 150px;
+        height: 150px;
+        margin-top: -155px;
+        margin-bottom: 20px;
+        margin-left: 25px;
     }
     .grid-2 {
-        width: auto;
-        flex-direction: column;
+        flex-wrap: wrap;
         background-color: rgb(231, 226, 226);
         margin-bottom: 100px;
-        background-position: top;
     }
     .grid-2a {
         width: 100%;
@@ -735,9 +736,9 @@ hr {
     .icons {
         height: auto;
         row-gap: 0;
-        padding: 0 100px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;   
     }
     .icon-1, .icon-2, .icon-3, .icon-4, .icon-5, .icon-6 {
         width: 150px;
@@ -748,6 +749,7 @@ hr {
     /* BLACKEY section starts here */
     .blackey {
         padding: 60px;
+        flex-wrap: wrap;
     }
     .learn {
         width: 100%;
@@ -772,6 +774,9 @@ hr {
     }
     
     /* GRAY section starts here */
+    .gray {
+        padding: 30px;
+    }
     .gray p {
        font-size: 12px; 
     }
