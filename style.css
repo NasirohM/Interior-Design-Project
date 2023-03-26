@@ -36,7 +36,7 @@ header {
 
 /* CONCEPTS begins here */
 .concepts {
-    /* background-image: url("./images/first.png"); */
+    background-image: url("./images/first.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -291,7 +291,7 @@ a {
 .flex {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 80px;
 }
 .middle {
@@ -343,7 +343,6 @@ a {
 }
 .grid-2b {
     max-width: 50%;
-    height: 100vh;
     float: right;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -358,7 +357,7 @@ a {
 }
 .span-2 {
     background-color: rgb(231, 228, 228);
-    padding: 20px 20px;
+    padding: 60px 30px;
     font-family: 'Open Sans', sans-serif;
 }
 .span-2 h2 {
@@ -367,7 +366,7 @@ a {
 }
 .span-3 {
     background-color: rgb(231, 228, 228);
-    padding: 15px;
+    padding: 60px 30px;
     font-family: 'Open Sans', sans-serif;
 }
 .span-3 h2 {
@@ -379,7 +378,6 @@ a {
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    height: 100%;
 }
 .icons {
     height: 500px;
@@ -517,17 +515,144 @@ hr {
     color: snow;
 }
 
-@media (max-width:700px) {
+/* TABLET responsiveness starts here */
+@media (max-width:768px) {
+    /* CONCEPT section starts here */
     .view {
-        padding: 100px 50px;
+        width: 520px;
     }
     .view h1 {
-        font-size: 2.0rem;
+        font-size: 3.5em;
+        line-height: 1.0em;
     }
     .view p {
-        font-size: 1rem;
+        font-size: 0.9em;
+    }
+
+    /*LAYERS section starts here  */
+    .layers {
+        height: 700px;
+    }
+    .white {
+        padding: 0 60px 60px 60px;
+    }
+    .brown-1 {
+        height: 420px;
+        width: 370px;
+    }
+    .hammock {
+        height: 420px;
+        width: 370px;
+        top: -380px;
+    }
+    .brown-2 {
+        width: 200px;
+        height: 280px;
+        padding: 30px 15px;
+        top: -1054px;
+    }
+    .cozy {
+        padding: 50px 30px;
+        bottom: 450px;
+        right: -300px;
+    }
+    .cozy h2 {
+        margin-left: 0;
+        font-size: 1.5rem;
+    }
+    .cozy p {
+        font-size: 16px;
+    }
+
+    /* NEW section starts here */
+    .grey {
+        padding: 60px 50px;
+        flex-wrap: wrap;
+    }
+    .texts {
+        margin-right: 70px;
+    }
+    .img-1 {
+        margin-right: 0;
+        margin-left: 28px;
+    }
+    .img-2, .img-3 {
+        margin-top: 30px;
+    }
+    .img-2 {
+        margin-right: 70px;
+    }
+
+    /* NATURE section starts here */
+    .title h1 {
+        font-size: 2.5em;
+        font-weight: 400;
+    }
+    .title p {
+        font-size: 16px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .grid-1 {
+        grid-template-columns: 250px 250px 250px;
+        grid-template-rows: 350px 350px;
+    }
+    .middle {
+        width: 260px;
+        margin-right: -100px;
+        margin-top: -80px;
+    }
+    .middle h1 {
+        font-size: 1.7em;
+    }
+    .middle p {
+        font-size: 16px;
+    }
+    .above {
+        width: 550px;
+    }
+    .brown-3 {
+        height: 400px;
+        width: 300px;
+        margin-left: 210px;
+    }
+    .lady {
+        height: 400px;
+        width: 300px;
+        margin-top: -355px;
+        margin-left: 160px;
+    }
+    .chair {
+        width: 180px;
+        height: 190px;
+        margin-left: 70px;
+        margin-top: -110px;
+    }
+    .grid-2 {
+        flex-direction: column;
+    }
+    .grid-2a {
+        width: 100%;
+        background-position: center;
+    }
+    .grid-2b {
+        max-width: 100%;
+        float: none;
+    }
+    .icon-1, .icon-2, .icon-3, .icon-4, .icon-5, .icon-6 {
+        background-size: contain;
+    }
+
+    /* BLACKEYsection starts here */
+    .learn {
+        width: 60%;
+    }
+
+    /* BROWNY section starts here */
+    .browny {
+        padding: 80px 60px 50px;
     }
 }
+
 /* MOBILE responsiveness starts here */
 @media (max-width:425px) {
     /* HEADER SECTION */
@@ -621,6 +746,7 @@ hr {
     /* NEW section starts here */
     .grey {
         flex-direction: column;
+        flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
         padding: 100px 50px;
